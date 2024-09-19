@@ -1,0 +1,65 @@
+import java.util.Scanner; 
+ 
+class QuizProgram { 
+  public static void main(String[] args) { 
+    Scanner input = new Scanner(System.in); 
+    int score = 0; 
+     
+    System.out.println("Welcome to my Quiz"); 
+     
+    // Question 1 
+    System.out.println("Question 1: Which sport is the best?"); 
+    System.out.println("a. Soccer"); 
+    System.out.println("b. Football"); 
+    System.out.println("c. Basketball"); 
+    String answer1 = input.nextLine().toLowerCase(); 
+    if (answer1.equals("b")) { 
+      System.out.println("Correct!"); 
+      score++; 
+    } else { 
+      System.out.println("Sorry, the correct answer is Fottball."); 
+    } 
+     
+    // Question 2 
+    System.out.println("Question 2: Who is the oldest quartback in the NFL right now?"); 
+    System.out.println("a. Aaron rodgers"); 
+    System.out.println("b. Justin fields"); 
+    System.out.println("c. Russel wilson"); 
+    String answer2 = input.nextLine().toLowerCase(); 
+    if (answer2.equals("a")) { 
+      System.out.println("Correct!"); 
+      score++; 
+    } else { 
+      System.out.println("Sorry, the correct answer is Aaron rodgers."); 
+    } 
+
+    //Question 3
+    System.out.println("Question 3: Which one of these runningbacks has the most yards right now?"); 
+    System.out.println("a. Saquon barkley"); 
+    System.out.println("b. Joe mixon"); 
+    System.out.println("c. Josh Jacobs"); 
+    String answer3 = input.nextLine().toLowerCase(); 
+    if (answer3.equals("c")) { 
+      System.out.println("Correct!"); 
+      score++; 
+    } else { 
+      System.out.println("Sorry, the correct answer is Josh jacobs."); 
+    } 
+
+    //Question 4
+    System.out.println("Question 4: Which franchise is the most valuable right now?"); 
+    System.out.println("a. Greenbay packers"); 
+    System.out.println("b. Sanfran 49ers"); 
+    System.out.println("c. LA rams"); 
+    String answer4 = input.nextLine().toLowerCase(); 
+    if (answer4.equals("c")) { 
+      System.out.println("Correct!"); 
+      score++; 
+    } else { 
+      System.out.println("Sorry, the correct answer is LA rams."); 
+    } 
+     
+    // Display final score 
+    System.out.println("Your final score is: " + score); 
+  } 
+} 
